@@ -48,7 +48,7 @@ myShop.use(passport.session());
 
 
 // server running
-myShop.listen(process.env.Port || 4000,()=>
+myShop.listen(process.env.Port ,()=>
 {
     connection()
     .then(()=>
