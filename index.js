@@ -46,6 +46,9 @@ myShop.use("/auth",auth);
 
 myShop.use(passport.session());
 
+myShop.get("/", (req, res) => {
+    return res.json({ Welcome: `to my my Shop backend software` });
+  });
 
 // server running
 myShop.listen(process.env.Port ,()=>
