@@ -42,7 +42,7 @@ Router.post("/",upload.single("file"),async(req,res)=>
 Router.get("/:_id", async (req, res) => {
     try {
       const { _id } = req.params;
-      console.log(_id);
+      
       const image = await photosModel.findById(_id);
   
       return res.status(200).json(image);
