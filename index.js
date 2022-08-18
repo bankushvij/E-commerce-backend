@@ -19,7 +19,8 @@ import auth from "./API/auth/index.js"
 import googleConfig from './config/google.config.js';
 import privateRouteConfig from "./config/route.config.js";
 import passport from 'passport';
-const session = require('express-session');
+// const session = require('express-session');
+import session from 'express-session';
 
 
 
@@ -51,7 +52,7 @@ myShop.get("/", (req, res) => {
   });
 
 // server running
-myShop.listen(process.env.Port ,()=>
+myShop.listen(process.env.Port||4000 ,()=>
 {
     connection()
     .then(()=>
