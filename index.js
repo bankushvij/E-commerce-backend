@@ -39,9 +39,9 @@ myShop.use(passport.initialize())
 
 
 // routes
-myShop.use("/items",items);
-myShop.use("/images",images);
-myShop.use("/auth",auth);
+myShop.use("/api/items",items);
+myShop.use("/api/images",images);
+myShop.use("/api/auth",auth);
 
 
 
