@@ -52,7 +52,8 @@ myShop.get("/", (req, res) => {
   });
 
 // server running
-myShop.listen(process.env.Port ,()=>
+const PORT=process.env.PORT||4000
+myShop.listen(PORT ,()=>
 {
     connection()
     .then(()=>
