@@ -53,7 +53,7 @@ myShop.get("/", function (req, res) {
   });
 }); // server running
 
-myShop.listen(process.env.Port || 4000, function () {
+myShop.listen(process.env.Port, function () {
   (0, _connection["default"])().then(function () {
     console.log("Server is running !!!");
   })["catch"](function (error) {
